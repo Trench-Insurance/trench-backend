@@ -15,5 +15,4 @@ def home():
 def predict():
     n_month = request.args.get("month")
     prediction = model.predict(1185, 1185 + int(n_month) - 1)
-    output = prediction[0]
-    return jsonify(output)
+    return jsonify(prediction.tolist())
