@@ -6,6 +6,11 @@ app = Flask(__name__)
 model = pickle.load(open("model.pickle", "rb"))
 
 
+@app.route("/")
+def home():
+    return "Welcome to Trench Backend, type in /predict?month=xxx to predict"
+
+
 @app.route("/predict")
 def predict():
     n_month = request.args.get("month")
