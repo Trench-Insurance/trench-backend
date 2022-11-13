@@ -1,11 +1,10 @@
-from flask import Flask
-import numpy as np
 from flask import Flask, request, jsonify
 import pickle
 
 app = Flask(__name__)
 
-model = pickle.load(open("model.pickle","rb"))
+model = pickle.load(open("model.pickle", "rb"))
+
 
 @app.route("/predict")
 def predict():
