@@ -2,3 +2,4 @@ flask
 gunicorn
 statsmodels
 joblib
+scikit-learn
