@@ -3,3 +3,4 @@ gunicorn
 statsmodels
 joblib
 scikit-learn
+flask-cors
